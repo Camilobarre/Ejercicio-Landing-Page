@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Maiden Orange", serif;
+}
+
 :root {
     --blanco: #FFFFFF;
     --azul-medio-oscuro: #0d5469;
@@ -13,12 +20,6 @@
     --negro-claro: #1f1c1c;
 }
 
-* {
-    margin: 0px;
-    border: 0px;
-    box-sizing: border-box;
-    font-family: "Maiden Orange", serif;
-}
 
 .header {
     background: linear-gradient(130deg, var(--negro) 50%, var(--rojo));
@@ -86,9 +87,9 @@
 }
 
 .textContainer{
-    height: 500px;
+  
     width: 1000px;
-    position: relative;
+    /* position: relative; */
 }
 
 .footer {
@@ -96,10 +97,11 @@
     color: var(--blanco);
     text-align: center;
     padding: 20px 10px;
-    bottom: 10;
+    border: 2px solid red;
 }
 
 .estrella{
     height: 150px;
     width: 250px;
 }
+
