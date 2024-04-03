@@ -42,7 +42,7 @@
             </a>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <br>
         <h3 class="Titulos">Precuelas</h3>
         <br>
@@ -218,6 +218,29 @@
                         caída de la República Galáctica y la lucha contra el posterior Imperio Galáctico.</p>
                 </div>
             </article>
+        </section>
+        <section id="Contacto">
+            <form action="./src/pages/server.html" method="get">
+                <fieldset>
+                    <legend>Contacto</legend>
+                        <br>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input class="nombre" type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="correo">Correo:</label>
+                            <input class="correo" type="email" name="correo" id="correo" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comentarios">Comentarios:</label><br>
+                            <textarea class="comentarios" name="comentarios" id="comentarios" cols="30" rows="10" maxlength="255"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Enviar información</button>
+            </form>
         </section>
     </main>
     
