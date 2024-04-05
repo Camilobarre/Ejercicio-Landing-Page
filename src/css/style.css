@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* Normalizamos la página */
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +9,7 @@
     font-family: "Maiden Orange", serif;
 }
 
+/* Variables de entorno con Paleta de colores */
 :root {
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -16,9 +18,9 @@
     --gris-claro: #EAEAEA;
 }
 
-
+/* Estilos para el Header de la página */
 .header {
-    background: linear-gradient(5deg, var(--negro) 50%, var(--rojo));
+    background: linear-gradient(5deg, var(--negro) 60%, var(--rojo));
     color: var(--blanco);
     display: flex;
     align-items: center;
@@ -26,6 +28,7 @@
     padding: 20px 10px;
 }
 
+/* Estilos para la barra de navegación */
 .nav {
     display: flex;
     align-items: center;
@@ -37,10 +40,12 @@
     text-decoration: none;
 }
 
+/* Color de fondo para el Main de la página */
 main{
     background-color: var(--negro);
 }
 
+/* EStilos para cada uno de los id */
 #secuelas{
     background-color: var(--negro);
     color: var(--rojo);
@@ -93,6 +98,7 @@ main{
     border: var(--rojo) groove 5px;
 }
 
+/* Estilos para los contenedores */
 .Contenedor{
     height: 90px;
     width: 500px;
@@ -106,11 +112,13 @@ main{
     padding-right: 15%;
 }
 
+/* Estilos para los textos dentro del contenedor */
 .textContainer{
     width: 1000px;
     color: var(--gris-claro);
 }
 
+/* Estilos para el Footer de la página */
 .footer {
     background: linear-gradient(180deg, var(--negro) 50%, var(--rojo));
     color: var(--blanco);
@@ -118,11 +126,13 @@ main{
     padding: 20px 10px;
 }
 
+/* Tamaño de una imagen */
 .estrella{
     height: 150px;
     width: 250px;
 }
 
+/* Estilos para el id formulario */
 #Contacto {
     background-color: var(--negro);
     color: var(--rojo);
@@ -146,9 +156,7 @@ main{
     text-align: center;
 }
 
+/* Centrar el video del inicio */
 .video{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     text-align: center;
 }

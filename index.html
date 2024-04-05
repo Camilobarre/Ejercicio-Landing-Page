@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="shortcut icon" href="./src/public/img/estrella.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/img/estrella.jpg" type="image/x-icon">
     <meta name="description"
         content="Explora nuestra emocionante landing page con información sobre el universo de Star Wars." />
     <meta name="keywords" content="Información, Star Wars, George Lucas, Universo, Galaxias, Naves, Jedi, Sith">
@@ -21,9 +21,12 @@
 </head>
 
 <body>
+
+    <!-- Se inicia la sesión del Header -->
     <header class="header">
-        <img class="estrella" src="./src/public/img/estrella.jpg" alt="Estrella de la Muerte">
+        <img class="estrella" src="./public/img/estrella.jpg" alt="Estrella de la Muerte">
         <h1>Star Wars</h1>
+        <!-- Se crea unna barra de navegación -->
         <nav class="nav">
             <a href="#precuelas">
                 <i class="bi bi-rocket"></i>
@@ -43,15 +46,21 @@
             </a>
         </nav>
     </header>
+
+    <!-- Se inicia la sesión Main -->
     <main class="main">
         <br>
-        <h2 class="Titulos">Una breve introducción</h2>
-        <video class="video" controls>
-            <source src="https://youtu.be/AuoqqTyvGko?si=ZEAIdvj3eD3yWMc7" type="video/mp4">
-        </video>
+        <!-- Se inserta un video -->
+        <section class="video">
+            <h2 class="Titulos">Una breve introducción</h2>
+            <video class="video" controls>
+                <source src="./public/video/Video1.mp4" type="video/mp4">
+            </video>
+        </section>
         <br>
         <h3 class="Titulos">Precuelas</h3>
         <br>
+        <!-- Se crean las diferentes sesiones con el contenido de la página -->
         <section id="precuelas">
             <article class="Contenedor">
                 <div><img class="logos"
@@ -225,30 +234,34 @@
                 </div>
             </article>
         </section>
+        <!-- Se crea una sesión con el formulario -->
         <section id="Contacto">
-            <form class="Contacto" action="./src/pages/server.html" method="get">
+            <form class="Contacto" action="./src/pages/server.html" method="get" target="_blank">
                 <fieldset>
                     <legend>Contacto</legend>
-                        <br>
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input class="nombre" type="text" name="nombre" id="nombre" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="correo">Correo:</label>
-                            <input class="correo" type="email" name="correo" id="correo" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="comentarios">Comentarios:</label><br>
-                            <textarea class="comentarios" name="comentarios" id="comentarios" cols="30" rows="10" maxlength="255"></textarea>
-                        </div>
-                    </fieldset>
-                    <button type="submit">Enviar información</button>
+                    <br>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input class="nombre" type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="correo">Correo:</label>
+                        <input class="correo" type="email" name="correo" id="correo" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="comentarios">Comentarios:</label><br>
+                        <textarea class="comentarios" name="comentarios" id="comentarios" cols="30" rows="10"
+                            maxlength="255"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar información</button>
             </form>
         </section>
     </main>
+
+    <!-- Se crea el Footer con el mapa de RIWI-->
     <footer class="footer">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.351432508582!2d-75.5836149!3d6.219101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1712080267403!5m2!1ses-419!2sco"
